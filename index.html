@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <div class="bg-txt">
+        <p id="text"></p>
+    </div>
+
+    
+    <section>
+        <h2 class="titulo_s">Mis habilidades</h2>
+
+        <div class="container">
+
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img width=" 100px" src="img/web.svg" alt="">
+                        <h3>Desarrollo Web</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tenetur quaerat optio explicabo
+                        commodi dolorem exercitationem.</p>
+                    <a href=""></a>
+                </div>
+            </div>
+
+            <div class="card card-top">
+                <div class="face face1">
+                    <div class="content">
+                        <img width=" 100px" src="img/movil.svg" alt="">
+                        <h3>Desarrollo Móvil</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tenetur quaerat optio explicabo
+                        commodi dolorem exercitationem.</p>
+                    <a href=""></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img width=" 100px" src="img/desktop.svg" alt="">
+                        <h3>Desarrollo Desktop</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tenetur quaerat optio explicabo
+                        commodi dolorem exercitationem.</p>
+                    <a href=""></a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <script>
+        var text = document.getElementById("text");
+        const txt = "Hola mi nombre es Jhonny soy desarrollador web";
+        var cont = 0;
+        var tm = setInterval(() => {
+            if (cont > txt.length) {
+                clearInterval(tm);
+            }
+            text.innerHTML += txt.charAt(cont);
+            cont++;
+        }, 100)
+        const card = document.querySelectorAll(".card")
+        
+    </script>
+</body></html>
